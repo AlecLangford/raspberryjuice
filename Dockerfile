@@ -1,7 +1,7 @@
 # Starting point - Official image with OpenJRE 8
 FROM java:8-jre
 
-MAINTAINER Paul Choi <paulchoi@alum.berkeley.edu>
+MAINTAINER Axl0
 
 WORKDIR /minecraft
 
@@ -18,7 +18,7 @@ RUN echo "[]" > whitelist.json
 # Add server settings
 ADD server.properties /minecraft/
 
-ADD https://yivesmirror.com/files/craftbukkit/craftbukkit-latest.jar /minecraft/
+ADD https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.13.2.jar /minecraft/
 
 # Downloaded from https://github.com/zhuowei/RaspberryJuice
 ADD https://github.com/zhuowei/RaspberryJuice/raw/master/jars/raspberryjuice-1.11.jar /minecraft/plugins/
